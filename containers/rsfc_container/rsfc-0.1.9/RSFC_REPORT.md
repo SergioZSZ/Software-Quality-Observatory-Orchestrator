@@ -1,18 +1,18 @@
-# Quality Assessment for rsfc 0.1.7
+# Quality Assessment for rsfc 0.1.8
 
-An automated assessment of the rsfc tool based on the EVERSE software quality indicators, run on 2026-07-23.
+An automated assessment of the rsfc tool based on the EVERSE software quality indicators, run on 2026-08-17.
 
 ## General Information
 
 - **Software:** rsfc
 - **Repository:** https://github.com/oeg-upm/rsfc
-- **Assessment date:** 2026-07-23T09:37:26Z
+- **Assessment date:** 2026-08-17T08:01:00Z
 - **Total checks:** 41
 
 ## Summary
 
-- **Passed (`true`)**: 35
-- **Failed (`false`)**: 6
+- **Passed (`true`)**: 36
+- **Failed (`false`)**: 5
 - **Errors (`error`)**: 0
 
 ## Results Table
@@ -37,7 +37,7 @@ An automated assessment of the rsfc tool based on the EVERSE software quality in
 | [RSFC-05-2](https://w3id.org/rsfc/test/RSFC-05-2) | Contact and support metadata exists | true |
 | [RSFC-05-3](https://w3id.org/rsfc/test/RSFC-05-3) | Software documentation exists | true |
 | [RSFC-06-1](https://w3id.org/rsfc/test/RSFC-06-1) | Authors are declared | true |
-| [RSFC-06-2](https://w3id.org/rsfc/test/RSFC-06-2) | Contributors are declared | false |
+| [RSFC-06-2](https://w3id.org/rsfc/test/RSFC-06-2) | Contributors are declared | true |
 | [RSFC-06-3](https://w3id.org/rsfc/test/RSFC-06-3) | Authors have an ORCID assigned | false |
 | [RSFC-07-1](https://w3id.org/rsfc/test/RSFC-07-1) | There is an identifier in README or CITATION | true |
 | [RSFC-07-2](https://w3id.org/rsfc/test/RSFC-07-2) | Software identifier resolves and links back to software | true |
@@ -141,10 +141,11 @@ An automated assessment of the rsfc tool based on the EVERSE software quality in
 #### Contributors are declared
 
 - **Test ID:** https://w3id.org/rsfc/test/RSFC-06-2
-- **Result:** false
+- **Result:** true
 - **Process:** Searches for contributors in various files of the repository (i.e. codemeta.json, pyproject.toml, pom.xml)'
-- **Evidence:** Could not find any contributors in the repository
-- **Suggestions:** Your software should also document its contributors if there are any. More information at https://everse.software/RSQKit/documenting_software_project
+- **Evidence:** Contributors were found in:
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json
+- **Suggestions:** N/A
 
 <a id="descriptive_metadata-https---w3id-org-rsfc-test-rsfc-06-3"></a>
 #### Authors have an ORCID
@@ -177,6 +178,7 @@ An automated assessment of the rsfc tool based on the EVERSE software quality in
 - **Result:** true
 - **Process:** Searches for release tags in the repository
 - **Evidence:** These releases were found:
+	- https://github.com/oeg-upm/rsfc/releases/tag/v0.1.8
 	- https://github.com/oeg-upm/rsfc/releases/tag/v0.1.7
 	- https://github.com/oeg-upm/rsfc/releases/tag/v0.1.6
 	- https://github.com/oeg-upm/rsfc/releases/tag/v0.1.5
@@ -305,7 +307,7 @@ An automated assessment of the rsfc tool based on the EVERSE software quality in
 - **Process:** Searches for dependencies in project configuration files, README and dependencies files such as requirements.txt
 - **Evidence:** Requirements were found in:
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt, https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/README.md
 - **Suggestions:** N/A
 
@@ -350,54 +352,7 @@ An automated assessment of the rsfc tool based on the EVERSE software quality in
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
@@ -409,7 +364,54 @@ An automated assessment of the rsfc tool based on the EVERSE software quality in
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/requirements.txt
@@ -570,9 +572,9 @@ An automated assessment of the rsfc tool based on the EVERSE software quality in
 - **Result:** true
 - **Process:** Searches for a file named 'LICENSE' or 'LICENSE.md' in the root of the repository.
 - **Evidence:** A license was found in:
-	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/CITATION.cff
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/codemeta.json
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/LICENSE
+	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/CITATION.cff
 	- https://raw.githubusercontent.com/oeg-upm/rsfc/main/pyproject.toml
 - **Suggestions:** N/A
 
@@ -604,6 +606,7 @@ An automated assessment of the rsfc tool based on the EVERSE software quality in
 - **Process:** Searches for files and/or directories that mention test in their names. Also, ignores doc and docs directories
 - **Evidence:** Files and/or directories that mention test were found at:
 	- tests
+	- tests/prueba_local.py
 	- tests/test_main.py
 - **Suggestions:** N/A
 
@@ -658,7 +661,7 @@ An automated assessment of the rsfc tool based on the EVERSE software quality in
 - **Result:** true
 - **Process:** Checks if the software repository has a commits history
 - **Evidence:** A commit history was found in:
-	- https://api.github.com/repos/oeg-upm/rsfc/commits?sha=main&since=2026-04-24T09:37:14.713245+00:00&per_page=100
+	- https://api.github.com/repos/oeg-upm/rsfc/commits?sha=main&since=2026-05-19T08:00:38.389532+00:00&per_page=100
 - **Suggestions:** N/A
 
 <a id="version_control_use-https---w3id-org-rsfc-test-rsfc-17-3"></a>

@@ -11,6 +11,7 @@ RUN poetry config virtualenvs.create false
 
 # instalamos UNICAMENTE entorno (--no-root), si no fallo de que no este el paquete rsfc_runner
 COPY pyproject.toml poetry.lock ./
+COPY rsfc-0.1.9 ./rsfc-0.1.9
 RUN poetry install --no-root
 
 # instalacion de nltk para somef de soca
@@ -18,9 +19,7 @@ RUN pip install nltk
 RUN python -m nltk.downloader wordnet
 RUN python -m nltk.downloader omw-1.4
 
-# rsfc 
-COPY rsfc-0.1.8 ./rsfc-0.1.8
-RUN pip install -e ./rsfc-0.1.8
+
 
 
 # resto del runner

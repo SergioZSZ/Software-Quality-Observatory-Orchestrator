@@ -13,11 +13,10 @@ RUN pip install --no-cache-dir poetry \
 
 # Dependencias del proyecto
 COPY pyproject.toml poetry.lock ./
+COPY soca ./soca
 RUN poetry install --no-root --no-interaction --no-ansi
 
-# Instalación de SOCA
-COPY soca ./soca
-RUN pip install --no-cache-dir -e ./soca
+
 
 # Recursos NLTK descargados durante la construcción de la imagen
 RUN pip install nltk
